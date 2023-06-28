@@ -66,7 +66,7 @@ python tools/data_preprocess/parse_SG_from_COCO_captionV2.py
 Note that, to utilize the advanced scene graph parser from https://nlp.stanford.edu/software/scenegraph-parser.shtml, please refer to [tools/data_preprocess/CocoCaptionParser.java](tools/data_preprocess/CocoCaptionParser.java).
 
 
-3. Obtain scene graph groundings
+3. Obtain scene graph groundings (for language-supervised SGG)
 ```
 python tools/data_preprocess/parse_SG_from_COCO_caption.py
 ```
