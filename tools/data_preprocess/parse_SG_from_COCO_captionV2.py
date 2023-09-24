@@ -12,7 +12,7 @@ import os
 from maskrcnn_benchmark.data.datasets import VG150Dataset
 import argparse
 import sng_parser
-from maskrcnn_benchmark.data.utils import map_caption_concepts_to_vg150_categories
+from maskrcnn_benchmark.data.preprocess_utils import map_caption_concepts_to_vg150_categories
 
 parser = argparse.ArgumentParser(description="Grounding")
 parser.add_argument("--sg_parser", type=str, default='python')
