@@ -12,7 +12,7 @@ import argparse
 import sng_parser
 import torch
 import random
-from maskrcnn_benchmark.data.utils import map_caption_concepts_to_vg150_categories
+from maskrcnn_benchmark.data.preprocess_utils import map_caption_concepts_to_vg150_categories
 
 parser = argparse.ArgumentParser(description="Grounding")
 parser.add_argument("--gpu_size", type=int, default=1)
