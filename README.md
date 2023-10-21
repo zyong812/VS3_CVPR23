@@ -14,6 +14,7 @@ python setup.py build develop --user
 ```
 
 ***Pre-trained Visual-Semantic Space.*** Download the pre-trained `GLIP-T` and `GLIP-L` [checkpoints](https://github.com/microsoft/GLIP#model-zoo) into the ``MODEL`` folder. 
+(!! GLIP has updated the downloading paths, please find these checkpoints following https://github.com/microsoft/GLIP#model-zoo)
 ```
 mkdir MODEL
 wget https://penzhanwu2bbs.blob.core.windows.net/data/GLIPv1_Open/models/glip_tiny_model_o365_goldg_cc_sbu.pth -O swin_tiny_patch4_window7_224.pth
@@ -66,7 +67,7 @@ python tools/data_preprocess/parse_SG_from_COCO_captionV2.py
 Note that, to utilize the advanced scene graph parser from https://nlp.stanford.edu/software/scenegraph-parser.shtml, please refer to [tools/data_preprocess/CocoCaptionParser.java](tools/data_preprocess/CocoCaptionParser.java).
 
 
-3. Obtain scene graph groundings
+3. Obtain scene graph groundings (for language-supervised SGG)
 ```
 python tools/data_preprocess/parse_SG_from_COCO_caption.py
 ```
